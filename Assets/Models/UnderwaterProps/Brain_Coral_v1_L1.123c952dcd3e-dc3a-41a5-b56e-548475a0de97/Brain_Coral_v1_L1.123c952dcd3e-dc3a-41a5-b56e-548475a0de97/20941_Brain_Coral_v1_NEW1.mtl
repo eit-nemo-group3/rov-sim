@@ -1,0 +1,18 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 10.06.2013 10:23:07
+
+newmtl _20941_Brain_Coral_v1_NEW_20941_Brain_Coral_v120941_Brain_Coral_v1
+	Ns 47.7424
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1.0000 1.0000 1.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.4500 0.4500 0.4500
+	Ke 0.0000 0.0000 0.0000
+	map_Ka 20941_Brain_Coral_Diff_v1.jpg
+	map_Kd 20941_Brain_Coral_Diff_v1.jpg
+	map_bump 20941_Brain_Coral_Spec_v1.jpg
+	bump 20941_Brain_Coral_Spec_v1.jpg

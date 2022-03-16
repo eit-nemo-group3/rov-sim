@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 6b8ef9f5fbdcaba4eb043415bf1560ef
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _Mat2_BaseTexture: {fileID: 2800000, guid: abc00000000007041358304285632009, type: 3}
+  - _Mat1_BaseTexture: {fileID: 2800000, guid: abc00000000012436328587221969967, type: 3}
+  - _T_Mask_Variation_A1: {fileID: 2800000, guid: abc00000000008775636167068768934, type: 3}
+  - _T_VertexBlend_Mask: {fileID: 2800000, guid: abc00000000013913144832383490117, type: 3}
+  - _Mat2_Base_Normal: {fileID: 2800000, guid: abc00000000006103509228571946067, type: 3}
+  - _Mat1_Base_Normal: {fileID: 2800000, guid: abc00000000006103509228571946067, type: 3}
+  - _BakedNormal: {fileID: 2800000, guid: abc00000000014974086189499053042, type: 3}
+  - _Mat2_RoughnessT: {fileID: 2800000, guid: abc00000000014223320513168256840, type: 3}
+  - _Mat1_RoughnessT: {fileID: 2800000, guid: abc00000000014223320513168256840, type: 3}
+  - _Opacity: {fileID: 2800000, guid: abc00000000007041358304285632009, type: 3}
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

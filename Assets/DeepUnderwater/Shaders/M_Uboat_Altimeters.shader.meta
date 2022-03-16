@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 5155c27d7a1f8c6458390d6304f1866e
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _Mat3_BaseTexture: {fileID: 2800000, guid: abc00000000002657577063544420420, type: 3}
+  - _Mat2_BaseTexture: {fileID: 2800000, guid: abc00000000007041358304285632009, type: 3}
+  - _Mat1_BaseTexture: {fileID: 2800000, guid: abc00000000012436328587221969967, type: 3}
+  - _Mat2_Mask_Variation: {fileID: 2800000, guid: abc00000000008775636167068768934, type: 3}
+  - _Blend_Mask_G: {fileID: 2800000, guid: abc00000000013913144832383490117, type: 3}
+  - _T_Props_AltimetersA1_mask: {fileID: 2800000, guid: abc00000000015996624439112148777, type: 3}
+  - _Mat3_Base_Normal: {fileID: 2800000, guid: abc00000000016124000965088101700, type: 3}
+  - _Mat2_Base_Normal: {fileID: 2800000, guid: abc00000000006103509228571946067, type: 3}
+  - _Mat1_Base_Normal: {fileID: 2800000, guid: abc00000000006103509228571946067, type: 3}
+  - _BakedNormal: {fileID: 2800000, guid: abc00000000014974086189499053042, type: 3}
+  - _Mat3_RoughnessT: {fileID: 2800000, guid: abc00000000009428763281507424020, type: 3}
+  - _Mat2_RoughnessT: {fileID: 2800000, guid: abc00000000014223320513168256840, type: 3}
+  - _Mat1_RoughnessT: {fileID: 2800000, guid: abc00000000014223320513168256840, type: 3}
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

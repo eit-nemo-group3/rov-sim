@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: eb846acb9a319714195b88468121a160
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _T_Sand_A_Height: {fileID: 2800000, guid: cd159a92028ef19489fc3bf256e90e04, type: 3}
+  - Material_Texture2D_1: {fileID: 2800000, guid: fb3f2cd2bfbfeff42a86323ca72e3d64, type: 3}
+  - Material_Texture2D_0: {fileID: 2800000, guid: d5bf122ec49a3ea4dae35b4730467079, type: 3}
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

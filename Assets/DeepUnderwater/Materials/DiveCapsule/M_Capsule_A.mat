@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_Capsule_A
+  m_Shader: {fileID: 4800000, guid: 9b009fbdb2530004db0da6b41e22738e, type: 3}
+  m_ShaderKeywords: _EMISSIVETEXTURE_ON _METALLICTEXTURE_ON _ROUGHNESSTEXTURE_ON
+    _USECOLOR_ON
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Material_Texture2D_0:
+        m_Texture: {fileID: 2800000, guid: abc00000000000815437307248828299, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Material_Texture2D_1:
+        m_Texture: {fileID: 2800000, guid: abc00000000007889464715735027003, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Material_Texture2D_2:
+        m_Texture: {fileID: 2800000, guid: abc00000000012158621621882872175, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Material_Texture2D_3:
+        m_Texture: {fileID: 2800000, guid: abc00000000012091895505925549598, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Material_TextureD_3:
+        m_Texture: {fileID: 2800000, guid: 3f081a74e39c0ba4990ebbc9d859e7e6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RoughnessT:
+        m_Texture: {fileID: 2800000, guid: abc00000000012091895505925549598, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 2800000, guid: abc00000000012158621621882872175, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlphaCutoff: 0.5
+    - _BaseColor: 3.53
+    - _Brightness: 1.87
+    - _ColorTexture: 0
+    - _Desaturation: 0
+    - _DstBlend: 0
+    - _EmissiveTexture: 1
+    - _Invert: 0
+    - _Metallic: 0
+    - _MetallicTexture: 1
+    - _Power: 10
+    - _Roughness: 0.949
+    - _RoughnessTexture: 1
+    - _SrcBlend: 1
+    - _UV: 1
+    - _UVSec: 0
+    - _UseColor: 1
+    - _ZWrite: 1
+    - __dirty: 0
+    m_Colors:
+    - View_BufferSizeAndInvSize: {r: 1920, g: 1080, b: 0.00052, a: 0.00092}
+    - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
+    - _Color1: {r: 1, g: 0.4671207, b: 0.03301889, a: 0}
+    - _Color2: {r: 1, g: 0.31488845, b: 0, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+  m_BuildTextureStacks: []

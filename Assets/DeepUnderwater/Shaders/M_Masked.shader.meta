@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: eddebdb9419557f4e94b7662b1d4c429
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - Material_Texture2D_1: {fileID: 2800000, guid: abc00000000011634673642711658973, type: 3}
+  - Material_Texture2D_0: {fileID: 2800000, guid: abc00000000012122850438009226639, type: 3}
+  - _Mat1_RoughnessT: {fileID: 2800000, guid: abc00000000014223320513168256840, type: 3}
+  - Material_Texture2D_3: {fileID: 2800000, guid: abc00000000015841410210242463388, type: 3}
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

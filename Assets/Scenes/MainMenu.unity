@@ -201,7 +201,7 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5ea1be19209404d4f9ca27e243ab60ca, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: af7c3294438a24099acee93360c5ed55, type: 2}
   m_sharedMaterial: {fileID: -4697858191475315525, guid: 5ea1be19209404d4f9ca27e243ab60ca, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -265,7 +265,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &34452839
@@ -441,8 +441,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Scenarios
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 92c280b2a82474a28840f3dd118706a4, type: 2}
-  m_sharedMaterial: {fileID: 8400357388141565563, guid: 92c280b2a82474a28840f3dd118706a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: af7c3294438a24099acee93360c5ed55, type: 2}
+  m_sharedMaterial: {fileID: 6070515158257818677, guid: af7c3294438a24099acee93360c5ed55, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -819,8 +819,8 @@ MonoBehaviour:
   m_text: A ship has sunk to the ocean floor, and you have been tasked with navigating
     an ROV there to inspect the damage.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 92c280b2a82474a28840f3dd118706a4, type: 2}
-  m_sharedMaterial: {fileID: 8400357388141565563, guid: 92c280b2a82474a28840f3dd118706a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: af7c3294438a24099acee93360c5ed55, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -883,7 +883,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &233775320
@@ -954,7 +954,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Coral Sampling
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 92c280b2a82474a28840f3dd118706a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: af7c3294438a24099acee93360c5ed55, type: 2}
   m_sharedMaterial: {fileID: 8400357388141565563, guid: 92c280b2a82474a28840f3dd118706a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1018,7 +1018,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &457385014
@@ -1174,7 +1174,7 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 92c280b2a82474a28840f3dd118706a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: af7c3294438a24099acee93360c5ed55, type: 2}
   m_sharedMaterial: {fileID: 8400357388141565563, guid: 92c280b2a82474a28840f3dd118706a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1238,7 +1238,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &655654044
@@ -1341,8 +1341,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Wreck Inspection
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 92c280b2a82474a28840f3dd118706a4, type: 2}
-  m_sharedMaterial: {fileID: 8400357388141565563, guid: 92c280b2a82474a28840f3dd118706a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: af7c3294438a24099acee93360c5ed55, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1405,7 +1405,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &752935178
@@ -1922,8 +1922,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ROV-SIM
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 92c280b2a82474a28840f3dd118706a4, type: 2}
-  m_sharedMaterial: {fileID: 8400357388141565563, guid: 92c280b2a82474a28840f3dd118706a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: af7c3294438a24099acee93360c5ed55, type: 2}
+  m_sharedMaterial: {fileID: 6070515158257818677, guid: af7c3294438a24099acee93360c5ed55, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2059,7 +2059,7 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 92c280b2a82474a28840f3dd118706a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: af7c3294438a24099acee93360c5ed55, type: 2}
   m_sharedMaterial: {fileID: 8400357388141565563, guid: 92c280b2a82474a28840f3dd118706a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2123,7 +2123,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &957689279
@@ -2608,7 +2608,7 @@ MonoBehaviour:
   m_text: A team of biology researchers has tasked you with navigating an ROV to
     a coral reef to fetch a sample.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 92c280b2a82474a28840f3dd118706a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: af7c3294438a24099acee93360c5ed55, type: 2}
   m_sharedMaterial: {fileID: 8400357388141565563, guid: 92c280b2a82474a28840f3dd118706a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2672,7 +2672,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1166619933
@@ -2804,6 +2804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1469316951}
   - component: {fileID: 1469316950}
+  - component: {fileID: 1469316952}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -2888,6 +2889,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1469316952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469316949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1001 &1595790231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3425,7 +3446,7 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 92c280b2a82474a28840f3dd118706a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: af7c3294438a24099acee93360c5ed55, type: 2}
   m_sharedMaterial: {fileID: 8400357388141565563, guid: 92c280b2a82474a28840f3dd118706a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3489,7 +3510,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1777352618
@@ -3516,7 +3537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f63fede1321748fea1e61ecaa5945c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &1949587610
+--- !u!1001 &1893521643
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3609,43 +3630,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5258593818225648350, guid: 3cb1a5e434f8f4dc1958da87852809a4, type: 3}
       propertyPath: m_Name
-      value: WreckInspectionButton
+      value: MenuNavigationButton
       objectReference: {fileID: 0}
     - target: {fileID: 5870224679592435982, guid: 3cb1a5e434f8f4dc1958da87852809a4, type: 3}
       propertyPath: m_text
       value: Wreck Inspection
       objectReference: {fileID: 0}
-    - target: {fileID: 5870224679592435982, guid: 3cb1a5e434f8f4dc1958da87852809a4, type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5870224679592435982, guid: 3cb1a5e434f8f4dc1958da87852809a4, type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5870224679592435982, guid: 3cb1a5e434f8f4dc1958da87852809a4, type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5870224679592435982, guid: 3cb1a5e434f8f4dc1958da87852809a4, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 6263717287731703366, guid: 3cb1a5e434f8f4dc1958da87852809a4, type: 3}
       propertyPath: m_Name
       value: ButtonText
-      objectReference: {fileID: 0}
-    - target: {fileID: 6335923177546347254, guid: 3cb1a5e434f8f4dc1958da87852809a4, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6335923177546347254, guid: 3cb1a5e434f8f4dc1958da87852809a4, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 2ab1cf3cb60844dcf8560b4e8d9b02e8, type: 3}
-    - target: {fileID: 6335923177546347254, guid: 3cb1a5e434f8f4dc1958da87852809a4, type: 3}
-      propertyPath: m_PreserveAspect
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9176387605217784390, guid: 3cb1a5e434f8f4dc1958da87852809a4, type: 3}
       propertyPath: menuLink
@@ -3714,7 +3707,7 @@ MonoBehaviour:
   m_text: "Sigmund Cook\nH\xE5vard Hjelmeseth\nBj\xF8rn-Inge Kleppe\nJacob Kristiansen\nHermann
     M\xF8rkrid\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5ea1be19209404d4f9ca27e243ab60ca, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: af7c3294438a24099acee93360c5ed55, type: 2}
   m_sharedMaterial: {fileID: -4697858191475315525, guid: 5ea1be19209404d4f9ca27e243ab60ca, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3778,7 +3771,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1978440570
@@ -3851,7 +3844,7 @@ MonoBehaviour:
     It was made by a team of students at NTNU Trondheim as part of the course "Experts
     in Teamwork", spring 2022.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 92c280b2a82474a28840f3dd118706a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: af7c3294438a24099acee93360c5ed55, type: 2}
   m_sharedMaterial: {fileID: 8400357388141565563, guid: 92c280b2a82474a28840f3dd118706a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3915,7 +3908,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2010496051

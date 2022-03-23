@@ -29,7 +29,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7557023252504341549}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7557023250574010975
 GameObject:
@@ -54,15 +54,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7557023250574010975}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.014885445, y: -0.038452238, z: -0.0184504}
+  m_LocalScale: {x: 0.99236304, y: 0.54931694, z: 0.46126}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7557023252232534505}
   - {fileID: 7557023252391650219}
-  m_Father: {fileID: 7557023252504341549}
-  m_RootOrder: 1
+  m_Father: {fileID: 7557023251275492631}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7557023251275492626
 GameObject:
@@ -97,7 +97,8 @@ Transform:
   m_LocalPosition: {x: -0.015, y: 0.0700001, z: 0.04}
   m_LocalScale: {x: 1.0076957, y: 1.8204427, z: 2.1679747}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7557023250574010974}
   m_Father: {fileID: 7557023252504341549}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -111,7 +112,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.2924528, g: 0.2924528, b: 0.26348343, a: 1}
+  m_BackGroundColor: {r: 0.13725491, g: 0.27450982, b: 0.36078432, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -197,6 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8801bb7f9b04452da7133ab9b4d7a8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnableDebug: 0
 --- !u!114 &7557023251275492629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,7 +582,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7557023251275492631}
-  - {fileID: 7557023250574010974}
   - {fileID: 1366688307397371311}
   - {fileID: 7557023250556030782}
   m_Father: {fileID: 0}
@@ -947,6 +948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8801bb7f9b04452da7133ab9b4d7a8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnableDebug: 0
 --- !u!114 &7557023252504341558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -969,13 +971,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7557023252504341549}
     m_Modifications:
+    - target: {fileID: 2034799105522046216, guid: 5afde8513e261da41acbe0e8eb14fa62, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c386c0077b5dd184dabee531800e7504, type: 2}
+    - target: {fileID: 4847751206325607020, guid: 5afde8513e261da41acbe0e8eb14fa62, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c386c0077b5dd184dabee531800e7504, type: 2}
+    - target: {fileID: 5934379810044538831, guid: 5afde8513e261da41acbe0e8eb14fa62, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c386c0077b5dd184dabee531800e7504, type: 2}
     - target: {fileID: 8170466444941777463, guid: 5afde8513e261da41acbe0e8eb14fa62, type: 3}
       propertyPath: m_Name
       value: rov_gripper
       objectReference: {fileID: 0}
     - target: {fileID: 8802429910618505357, guid: 5afde8513e261da41acbe0e8eb14fa62, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8802429910618505357, guid: 5afde8513e261da41acbe0e8eb14fa62, type: 3}
       propertyPath: m_LocalScale.x

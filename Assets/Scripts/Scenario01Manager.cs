@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 public class Scenario01Manager : MonoBehaviour
@@ -10,6 +11,7 @@ public class Scenario01Manager : MonoBehaviour
     [SerializeField] LayerMask layerMask;
     public Collider collisionBox;
     public Collider ROVCollisionBox;
+    public Collider SurfaceCollisionBox;
     public Camera ROVCamera;
     private int state = 0;
     public float inspectionRange = 30f;
@@ -37,6 +39,7 @@ public class Scenario01Manager : MonoBehaviour
         collisionBox = GameObject.Find("CollisionChamber").GetComponent<Collider>();
         ROVCollisionBox = GameObject.Find("ROV").GetComponent<Collider>();
         
+        
     }
 
     // Update is called once per frame
@@ -60,6 +63,13 @@ public class Scenario01Manager : MonoBehaviour
                     StartCoroutine(UpdateText("Return to the surface with your findings"));
                     Debug.Log("Inspection objective reached");
                 successSound.Play();
+            }
+        }
+
+        if (state == 2){
+            if (SurfaceCollisionBox.bounds.Intersects(ROVCollisionBox.bounds))
+            {
+                SceneManager.LoadScene("MainMenu");
             }
         }
         

@@ -17,18 +17,19 @@ namespace RovSim.Input
 		public bool OpenPressed { get; private set; }
 		public bool CameraTiltUpPressed { get; private set; }
 		public bool CameraTiltDownPressed { get; private set; }
+		public bool EnableDebug = false;
 
 
 		public void PressClose(InputAction.CallbackContext context)
 		{
 			if (context.started)
 			{
-				Debug.Log("close pressed");
+				if (EnableDebug) Debug.Log("close pressed");
 				ClosePressed = true;
 			}
 			else if (context.canceled)
 			{
-				Debug.Log("close released");
+				if (EnableDebug) Debug.Log("close released");
 				ClosePressed = false;
 			}
 		}
@@ -37,12 +38,12 @@ namespace RovSim.Input
 		{
 			if (context.started)
 			{
-				Debug.Log("open pressed");
+				if (EnableDebug) Debug.Log("open pressed");
 				OpenPressed = true;
 			}
 			else if (context.canceled)
 			{
-				Debug.Log("open released");
+				if (EnableDebug) Debug.Log("open released");
 				OpenPressed = false;
 			}
 		}
@@ -52,12 +53,12 @@ namespace RovSim.Input
 		{
 			if (context.started)
 			{
-				Debug.Log("up pressed");
+				if (EnableDebug) Debug.Log("move up pressed");
 				MoveUpPressed = true;
 			}
 			else if (context.canceled)
 			{
-				Debug.Log("up released");
+				if (EnableDebug) Debug.Log("up released");
 				MoveUpPressed = false;
 			}
 		}
@@ -66,12 +67,12 @@ namespace RovSim.Input
 		{
 			if (context.started)
 			{
-				Debug.Log("down pressed");
+				if (EnableDebug) Debug.Log("down pressed");
 				MoveDownPressed = true;
 			}
 			else if (context.canceled)
 			{
-				Debug.Log("down released");
+				if (EnableDebug) Debug.Log("down released");
 				MoveDownPressed = false;
 			}
 		}
@@ -80,12 +81,12 @@ namespace RovSim.Input
 		{
 			if (context.started)
 			{
-				Debug.Log("forward pressed");
+				if (EnableDebug) Debug.Log("forward pressed");
 				MoveForwardPressed = true;
 			}
 			else if (context.canceled)
 			{
-				Debug.Log("forward released");
+				if (EnableDebug) Debug.Log("forward released");
 				MoveForwardPressed = false;
 			}
 
@@ -95,12 +96,12 @@ namespace RovSim.Input
 		{
 			if (context.started)
 			{
-				Debug.Log("back pressed");
+				if (EnableDebug) Debug.Log("back pressed");
 				MoveBackPressed = true;
 			}
 			else if (context.canceled)
 			{
-				Debug.Log("back released");
+				if (EnableDebug) Debug.Log("back released");
 				MoveBackPressed = false;
 			}
 
@@ -110,12 +111,12 @@ namespace RovSim.Input
 		{
 			if (context.started)
 			{
-				Debug.Log("move left pressed");
+				if (EnableDebug) Debug.Log("move left pressed");
 				MoveLeftPressed = true;
 			}
 			else if (context.canceled)
 			{
-				Debug.Log("move left released");
+				if (EnableDebug) Debug.Log("move left released");
 				MoveLeftPressed = false;
 			}
 		}
@@ -124,12 +125,12 @@ namespace RovSim.Input
 		{
 			if (context.started)
 			{
-				Debug.Log("move right pressed");
+				if (EnableDebug) Debug.Log("move right pressed");
 				MoveRightPressed = true;
 			}
 			else if (context.canceled)
 			{
-				Debug.Log("move right released");
+				if (EnableDebug) Debug.Log("move right released");
 				MoveRightPressed = false;
 			}
 		}
@@ -138,12 +139,12 @@ namespace RovSim.Input
 		{
 			if (context.started)
 			{
-				Debug.Log("rotate left pressed");
+				if (EnableDebug) Debug.Log("rotate left pressed");
 				RotateLeftPressed = true;
 			}
 			else if (context.canceled)
 			{
-				Debug.Log("rotate left released");
+				if (EnableDebug) Debug.Log("rotate left released");
 				RotateLeftPressed = false;
 			}
 		}
@@ -152,12 +153,12 @@ namespace RovSim.Input
 		{
 			if (context.started)
 			{
-				Debug.Log("rotate right pressed");
+				if (EnableDebug) Debug.Log("rotate right pressed");
 				RotateRightPressed = true;
 			}
 			else if (context.canceled)
 			{
-				Debug.Log("rotate right released");
+				if (EnableDebug) Debug.Log("rotate right released");
 				RotateRightPressed = false;
 			}
 		}
@@ -166,12 +167,12 @@ namespace RovSim.Input
 		{
 			if (context.started)
 			{
-				Debug.Log("Camera tilt up pressed");
+				if (EnableDebug) Debug.Log("Camera tilt up pressed");
 				CameraTiltUpPressed = true;
 			}
 			else if (context.canceled)
 			{
-				Debug.Log("Camera til up released");
+				if (EnableDebug) Debug.Log("Camera til up released");
 				CameraTiltUpPressed = false;
 			}
 		}
@@ -180,12 +181,12 @@ namespace RovSim.Input
 		{
 			if (context.started)
 			{
-				Debug.Log("Camera tilt down pressed");
+				if (EnableDebug) Debug.Log("Camera tilt down pressed");
 				CameraTiltDownPressed = true;
 			}
 			else if (context.canceled)
 			{
-				Debug.Log("Camera tilt down released");
+				if (EnableDebug) Debug.Log("Camera tilt down released");
 				CameraTiltDownPressed = false;
 			}
 		}

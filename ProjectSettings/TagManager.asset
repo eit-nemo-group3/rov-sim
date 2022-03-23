@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Grabbable
   - Area
-  - Overflate
   layers:
   - Default
   - TransparentFX
@@ -14,7 +13,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - InspectionObjective
   - 
   - 
   - 

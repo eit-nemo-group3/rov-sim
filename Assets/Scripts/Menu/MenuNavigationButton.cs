@@ -1,37 +1,38 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 namespace RovSim.Menu
 {
-    [RequireComponent(typeof(Button))]
-    public class MenuNavigationButton : MonoBehaviour
-    {
-        [SerializeField] MenuPage menuLink;
+	[RequireComponent(typeof(Button))]
+	public class MenuNavigationButton : MonoBehaviour
+	{
+		[SerializeField] MenuPage menuLink;
 
-        private MenuController controller;
+		private MenuController controller;
 
-        public void Awake()
-        {
-            controller = GetComponentInParent<MenuController>();
-            if (controller is null)
-            {
-                Debug.LogError("MenuNavigationButton requires parent MenuController.");
-                return;
-            }
+		public void Awake()
+		{
+			controller = GetComponentInParent<MenuController>();
+			if (controller is null)
+			{
+				Debug.LogError("MenuNavigationButton requires parent MenuController.");
+				return;
+			}
 
-            if (menuLink is null)
-            {
-                Debug.LogError("MenuNavigationButton requires field menuLink.");
-                return;
-            }
+			if (menuLink is null)
+			{
+				Debug.LogError("MenuNavigationButton requires field menuLink.");
+				return;
+			}
 
-            Button button = GetComponent<Button>();
-            button.onClick.AddListener(ChangeMenu);
-        }
+			Button button = GetComponent<Button>();
+			button.onClick.AddListener(ChangeMenu);
+		}
 
-        public void ChangeMenu()
-        {
-            controller.SetMenu(menuLink);
-        }
-    }
+		public void ChangeMenu()
+		{
+			controller.SetMenu(menuLink);
+		}
+	}
 }

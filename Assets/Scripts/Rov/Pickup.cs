@@ -68,7 +68,7 @@ public class Pickup : MonoBehaviour
     void DropObject()
     {
         Rigidbody heldRig = heldObj.GetComponent<Rigidbody>();
-        heldRig.drag = 1;
+        heldRig.drag = 10;
 
         heldObj.transform.parent = null;
         heldObj = null;

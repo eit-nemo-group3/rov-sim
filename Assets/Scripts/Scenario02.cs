@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 public class Scenario02 : MonoBehaviour
@@ -65,6 +66,13 @@ public class Scenario02 : MonoBehaviour
                 successSound.Play();
             }
         }
-        
+
+        if (state == 2){
+            if (SurfaceCollisionBox.bounds.Intersects(ROVCollisionBox.bounds))
+            {
+                Debug.Log("reached surface");
+                SceneManager.LoadScene("MainMenu");
+            }
+        }
     }
 }

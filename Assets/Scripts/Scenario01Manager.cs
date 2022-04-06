@@ -18,6 +18,7 @@ public class Scenario01Manager : MonoBehaviour
     public TMP_Text questTitle;
     public TMP_Text questDescription;
     public AudioSource successSound;
+    public Animator transition;
 
 
     IEnumerator UpdateText(string text)
@@ -69,9 +70,22 @@ public class Scenario01Manager : MonoBehaviour
         if (state == 2){
             if (SurfaceCollisionBox.bounds.Intersects(ROVCollisionBox.bounds))
             {
-                SceneManager.LoadScene("MainMenu");
+                StartCoroutine(LoadLevel("MainMenu"));
             }
         }
         
+    }
+
+
+    IEnumerator LoadLevel(string levelName)
+    {
+        transition.SetTrigger("Start");
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(levelName);
+
+        // Wait until the asynchronous scene fully loads
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
     }
 }

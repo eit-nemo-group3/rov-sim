@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
     public Canvas HUDCanvas;
+    public Animator transition;
 
 
     // Update is called once per frame
@@ -46,13 +47,25 @@ public class PauseMenu : MonoBehaviour
     public void LoadMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("MainMenu");
+        StartCoroutine(LoadLevel("MainMenu"));
     }
 
     public void RestartScene()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    IEnumerator LoadLevel(string levelName)
+    {
+        transition.SetTrigger("Start");
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(levelName);
+
+        // Wait until the asynchronous scene fully loads
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
     }
 
 }

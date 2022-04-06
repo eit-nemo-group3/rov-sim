@@ -2,12 +2,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System;
+using System.Collections;
 
 namespace RovSim.Menu
 {
     [RequireComponent(typeof(Button))]
     public class SceneOpenerButton : MonoBehaviour
     {
+        public Animator transition;
         [SerializeField] private string sceneName;
 
         public void Awake()
@@ -25,7 +27,19 @@ namespace RovSim.Menu
 
         private void LoadScene()
         {
-            SceneManager.LoadScene(sceneName);
+            StartCoroutine(LoadLevel(sceneName));
+        }
+
+        IEnumerator LoadLevel(string levelName)
+        {
+            transition.SetTrigger("Start");
+            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(levelName);
+
+            // Wait until the asynchronous scene fully loads
+            while (!asyncLoad.isDone)
+            {
+                yield return null;
+            }
         }
     }
 }

@@ -76,14 +76,14 @@ public class Pickup : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Grabbable"){
+        if(collision.gameObject.tag == "Grabbable" || collision.gameObject.tag == "GrabbableFalse"){
             canGrab = true;
             rb = collision.gameObject;
         }
     }
     void OnCollisionExit(Collision collision)
     {
-        if(collision.gameObject.tag == "Grabbable"){
+        if(collision.gameObject.tag == "Grabbable" || collision.gameObject.tag == "GrabbableFalse"){
             canGrab = false;
             rb = null;
         }

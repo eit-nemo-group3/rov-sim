@@ -1,3 +1,3 @@
 # ROV-SIM
 
-Underwater drone simulator made with Unity.
+Build kan finnes under releases.

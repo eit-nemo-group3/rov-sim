@@ -11,23 +11,6 @@ public class DisplayText : MonoBehaviour
     private float endTime = 0f;
     private bool startTimer = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        // Test calls, not needed to use the Quest Hints
-        var texts = new List<string>(){
-            "HALLO",
-            "DETTE",
-            "ER",
-            "EN",
-            "TEST",
-            "SLUTT"
-        };
-        SetTextList(texts, 2);
-
-        //SetText("TEST", 2);
-    }
-
     // Update is called once per frame
     void Update()
     {

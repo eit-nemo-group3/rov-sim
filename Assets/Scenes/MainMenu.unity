@@ -4450,6 +4450,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelLoader
       objectReference: {fileID: 0}
+    - target: {fileID: 2415291201205469878, guid: c2c68cf770faebb45bc24607a2a9c12d, type: 3}
+      propertyPath: m_text
+      value: LOADING...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2415291201205469878, guid: c2c68cf770faebb45bc24607a2a9c12d, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: af7c3294438a24099acee93360c5ed55, type: 2}
+    - target: {fileID: 2415291201205469878, guid: c2c68cf770faebb45bc24607a2a9c12d, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6070515158257818677, guid: af7c3294438a24099acee93360c5ed55, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2c68cf770faebb45bc24607a2a9c12d, type: 3}
 --- !u!1001 &2708553959697321264

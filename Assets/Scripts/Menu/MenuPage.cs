@@ -6,7 +6,7 @@ namespace RovSim.Menu
     {
         public void SetVisibility(bool visible)
         {
-            this.gameObject.SetActive(visible);
+            gameObject.SetActive(visible);
         }
     }
 }

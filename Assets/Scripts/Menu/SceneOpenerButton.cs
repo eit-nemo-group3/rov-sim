@@ -20,7 +20,7 @@ namespace RovSim.Menu
                 return;
             }
 
-            Button button = GetComponent<Button>();
+            var button = GetComponent<Button>();
             button.onClick.AddListener(LoadScene);
         }
 
@@ -30,10 +30,10 @@ namespace RovSim.Menu
             StartCoroutine(LoadLevel(sceneName));
         }
 
-        IEnumerator LoadLevel(string levelName)
+        private IEnumerator LoadLevel(string levelName)
         {
             transition.SetTrigger("Start");
-            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(levelName);
+            var asyncLoad = SceneManager.LoadSceneAsync(levelName);
 
             // Wait until the asynchronous scene fully loads
             while (!asyncLoad.isDone)

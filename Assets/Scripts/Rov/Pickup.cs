@@ -1,91 +1,100 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using RovSim.Input;
 
-public class Pickup : MonoBehaviour
+namespace RovSim.Rov
 {
-    private GameObject heldObj;
-    private GameObject rb;
-    public Transform holdParent;
-    private float moveForce = 250f;
-    [SerializeField] private bool canGrab;
-    private InputDetector _inputDetector;
-    Rigidbody temp;
+    public class Pickup : MonoBehaviour
+    {
+        public Transform holdParent;
+        [SerializeField] private bool canGrab;
 
-		private void Awake()
-		{
-			_inputDetector = GetComponent<InputDetector>();
-		}
-    // Update is called once per frame
-    void Update()
-    {   
-        if(_inputDetector.ClosePressed && canGrab == true){
-            if(heldObj == null)
+        private const float MoveForce = 250f;
+        private GameObject _heldObj;
+        private GameObject _body;
+        private InputDetector _inputDetector;
+        private Rigidbody _temp;
+
+        private void Awake()
+        {
+            _inputDetector = GetComponent<InputDetector>();
+        }
+
+        // Update is called once per frame
+        private void Update()
+        {
+            if (_inputDetector.ClosePressed && canGrab)
             {
-                PickupObject(rb);
-                temp = rb.GetComponent<Rigidbody>();
-                temp.constraints = RigidbodyConstraints.FreezeAll;
-                Debug.Log("picked up");
+                if (_heldObj is null)
+                {
+                    PickupObject(_body);
+                    _temp = _body.GetComponent<Rigidbody>();
+                    _temp.constraints = RigidbodyConstraints.FreezeAll;
+                    Debug.Log("picked up");
+                }
+
             }
-            
+
+            if (_inputDetector.OpenPressed)
+            {
+                if (!(_heldObj is null))
+                {
+                    DropObject();
+                    _temp.constraints = RigidbodyConstraints.None;
+                }
+            }
+
+            if (!(_heldObj is null))
+            {
+                MoveObject();
+            }
         }
-        if(_inputDetector.OpenPressed)
+
+        private void MoveObject()
         {
-            if(heldObj != null){
-                DropObject();
-                temp.constraints = RigidbodyConstraints.None;
-            }    
+            if (Vector3.Distance(_heldObj.transform.position, holdParent.position) > 0.1f)
+            {
+                var moveDirection = (holdParent.position - _heldObj.transform.position);
+                _heldObj.GetComponent<Rigidbody>().AddForce(moveDirection * MoveForce);
+            }
         }
 
-        if(heldObj != null)
+        private void PickupObject(GameObject pickObj)
         {
-           MoveObject();
-        }
-    }
+            if (pickObj.GetComponent<Rigidbody>())
+            {
+                var objBody = pickObj.GetComponent<Rigidbody>();
+                objBody.drag = 10;
 
-    void MoveObject()
-    {
-        if(Vector3.Distance(heldObj.transform.position, holdParent.position) > 0.1f)
+                objBody.transform.parent = holdParent;
+                _heldObj = pickObj;
+            }
+        }
+
+        private void DropObject()
         {
-            Vector3 moveDirection = (holdParent.position - heldObj.transform.position);
-            heldObj.GetComponent<Rigidbody>().AddForce(moveDirection * moveForce);
-        }
-    }
+            var heldRig = _heldObj.GetComponent<Rigidbody>();
+            heldRig.drag = 10;
 
-    void PickupObject(GameObject pickObj)
-    {
-        if(pickObj.GetComponent<Rigidbody>())
+            _heldObj.transform.parent = null;
+            _heldObj = null;
+        }
+
+        private void OnCollisionEnter(Collision collision)
         {
-            Rigidbody objRig = pickObj.GetComponent<Rigidbody>();
-            objRig.drag = 10;
-
-            objRig.transform.parent = holdParent;
-            heldObj = pickObj;
+            if (collision.gameObject.CompareTag("Grabbable") || collision.gameObject.CompareTag("GrabbableFalse"))
+            {
+                canGrab = true;
+                _body = collision.gameObject;
+            }
         }
-    }
 
-    void DropObject()
-    {
-        Rigidbody heldRig = heldObj.GetComponent<Rigidbody>();
-        heldRig.drag = 10;
-
-        heldObj.transform.parent = null;
-        heldObj = null;
-    }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.tag == "Grabbable" || collision.gameObject.tag == "GrabbableFalse"){
-            canGrab = true;
-            rb = collision.gameObject;
-        }
-    }
-    void OnCollisionExit(Collision collision)
-    {
-        if(collision.gameObject.tag == "Grabbable" || collision.gameObject.tag == "GrabbableFalse"){
-            canGrab = false;
-            rb = null;
+        private void OnCollisionExit(Collision collision)
+        {
+            if (collision.gameObject.CompareTag("Grabbable") || collision.gameObject.CompareTag("GrabbableFalse"))
+            {
+                canGrab = false;
+                _body = null;
+            }
         }
     }
 }

@@ -7,8 +7,8 @@ TagManager:
   - Grabbable
   - Area
   - Undefined
-  - Overflate
   - GrabbableFalse
+  - Surface
   layers:
   - Default
   - TransparentFX

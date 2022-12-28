@@ -7,7 +7,7 @@ namespace RovSim.Menu
     {
         [SerializeField] private MenuPage defaultMenu;
 
-        private List<MenuPage> _menus = new List<MenuPage>();
+        private readonly List<MenuPage> _menus = new();
 
         public void Awake()
         {
@@ -17,7 +17,7 @@ namespace RovSim.Menu
                 return;
             }
 
-            foreach (MenuPage menu in GetComponentsInChildren<MenuPage>(true))
+            foreach (var menu in GetComponentsInChildren<MenuPage>(true))
             {
                 _menus.Add(menu);
             }
@@ -27,7 +27,7 @@ namespace RovSim.Menu
 
         public void SetMenu(MenuPage newMenu)
         {
-            foreach (MenuPage menu in _menus)
+            foreach (var menu in _menus)
             {
                 menu.SetVisibility(menu == newMenu);
             }

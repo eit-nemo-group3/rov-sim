@@ -43,36 +43,38 @@ namespace RovSim.Rov
 		private void FixedUpdate()
 		{
 			// Tilt camera up
-			handleCameraTilt(_inputDetector.CameraTiltUpPressed, -tiltSensitivity);
+			HandleCameraTilt(_inputDetector.CameraTiltUpPressed, -tiltSensitivity);
 
 			// Tilt camera down
-			handleCameraTilt(_inputDetector.CameraTiltDownPressed, tiltSensitivity);
+			HandleCameraTilt(_inputDetector.CameraTiltDownPressed, tiltSensitivity);
 		}
 
-		private void handleCameraTilt(bool inputPressed, float rotation)
+		private void HandleCameraTilt(bool inputPressed, float rotation)
 		{
-			if (inputPressed) 
+			if (!inputPressed) return;
+
+			var currentTransform = transform;
+			var previousAngles = currentTransform.localEulerAngles;
+
+			// Finding new roation
+			var newRotationX = previousAngles.x + rotation;
+
+			// Checking that roation does not exceed max angle
+			if (newRotationX > maxAngle & newRotationX < 180)
 			{
-				// Finding new roation
-				float newRotationX = transform.localEulerAngles.x + rotation;
-
-				// Checking that roation does not exceed max angle
-				if (newRotationX > maxAngle & newRotationX < 180) 
-				{
-					newRotationX = maxAngle;
-				}
-				else if (newRotationX < 360 - maxAngle  & newRotationX > 180)
-				{
-					newRotationX = 360 - maxAngle;
-				}
-
-				// Applying new rotation
-				transform.localEulerAngles = new Vector3(
-					newRotationX,
-					transform.localEulerAngles.y,
-					transform.localEulerAngles.z
-				);
+				newRotationX = maxAngle;
 			}
+			else if (newRotationX < 360 - maxAngle  & newRotationX > 180)
+			{
+				newRotationX = 360 - maxAngle;
+			}
+
+			// Applying new rotation
+			currentTransform.localEulerAngles = new Vector3(
+				newRotationX,
+				previousAngles.y,
+				previousAngles.z
+			);
 		}
 	}
 }

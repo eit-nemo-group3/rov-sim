@@ -48,57 +48,57 @@ namespace RovSim.Rov
 		private void FixedUpdate()
 		{
 			// Move forward
-			handleMovement(_inputDetector.MoveForwardPressed, Vector3.forward, horizontalThrust);
+			HandleMovement(_inputDetector.MoveForwardPressed, Vector3.forward, horizontalThrust);
 
 			// Move back
-			handleMovement(_inputDetector.MoveBackPressed, Vector3.back, horizontalThrust);
+			HandleMovement(_inputDetector.MoveBackPressed, Vector3.back, horizontalThrust);
 
 			// Move left
-			handleMovement(_inputDetector.MoveLeftPressed, Vector3.left, horizontalThrust);
+			HandleMovement(_inputDetector.MoveLeftPressed, Vector3.left, horizontalThrust);
 
 			// Move right
-			handleMovement(_inputDetector.MoveRightPressed, Vector3.right, horizontalThrust);
+			HandleMovement(_inputDetector.MoveRightPressed, Vector3.right, horizontalThrust);
 
 			// Move up
-			handleMovement(_inputDetector.MoveUpPressed, Vector3.up, verticalThrust);
+			HandleMovement(_inputDetector.MoveUpPressed, Vector3.up, verticalThrust);
 
 			// Move down
-			handleMovement(_inputDetector.MoveDownPressed, Vector3.down, verticalThrust);
+			HandleMovement(_inputDetector.MoveDownPressed, Vector3.down, verticalThrust);
 
 			// Rotate left
-			handleHorizontalRotation(_inputDetector.RotateLeftPressed, -rotationSensitivity);
+			HandleHorizontalRotation(_inputDetector.RotateLeftPressed, -rotationSensitivity);
 
 			// Rotate right
-			handleHorizontalRotation(_inputDetector.RotateRightPressed, rotationSensitivity);
+			HandleHorizontalRotation(_inputDetector.RotateRightPressed, rotationSensitivity);
 		}
 
 		/// <summary>
 		/// When inputPressed = true, applies a force to the game object
 		/// in the given direction and multiplied with the given thrust.
 		/// </summary>
-		private void handleMovement(bool inputPressed, Vector3 directionVector, float thrust)
+		private void HandleMovement(bool inputPressed, Vector3 directionVector, float thrust)
 		{
-			if (inputPressed)
-			{
-				var relativeVector = _body.transform.TransformDirection(directionVector);
-				_body.AddForce(relativeVector * thrust, ForceMode.Force);
-			}
+			if (!inputPressed) return;
+
+			var relativeVector = _body.transform.TransformDirection(directionVector);
+			_body.AddForce(relativeVector * thrust, ForceMode.Force);
 		}
 
 		/// <summary>
 		/// When inputPressed = true, rotates the game object according to the given rotation value.
 		/// </summary>
-		private void handleHorizontalRotation(bool inputPressed, float rotation)
+		private void HandleHorizontalRotation(bool inputPressed, float rotation)
 		{
-			if (inputPressed)
-			{
-				float newRotationY = transform.localEulerAngles.y + rotation;
-				transform.localEulerAngles = new Vector3(
-					transform.localEulerAngles.x,
-					newRotationY,
-					transform.localEulerAngles.z
-				);
-			}
+			if (!inputPressed) return;
+
+			var currentTransform = transform;
+			var previousAngles = currentTransform.localEulerAngles;
+
+			currentTransform.localEulerAngles = new Vector3(
+				previousAngles.x,
+				previousAngles.y + rotation,
+				previousAngles.z
+			);
 		}
 	}
 }

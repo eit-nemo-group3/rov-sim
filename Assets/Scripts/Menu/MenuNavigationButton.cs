@@ -6,14 +6,14 @@ namespace RovSim.Menu
     [RequireComponent(typeof(Button))]
     public class MenuNavigationButton : MonoBehaviour
     {
-        [SerializeField] MenuPage menuLink;
+        [SerializeField] private MenuPage menuLink;
 
-        private MenuController controller;
+        private MenuController _controller;
 
         public void Awake()
         {
-            controller = GetComponentInParent<MenuController>();
-            if (controller is null)
+            _controller = GetComponentInParent<MenuController>();
+            if (_controller is null)
             {
                 Debug.LogError("MenuNavigationButton requires parent MenuController.");
                 return;
@@ -25,13 +25,13 @@ namespace RovSim.Menu
                 return;
             }
 
-            Button button = GetComponent<Button>();
+            var button = GetComponent<Button>();
             button.onClick.AddListener(ChangeMenu);
         }
 
-        public void ChangeMenu()
+        private void ChangeMenu()
         {
-            controller.SetMenu(menuLink);
+            _controller.SetMenu(menuLink);
         }
     }
 }

@@ -71,3 +71,7 @@ crashlytics-build.properties
 
 # VSCode local settings
 .vscode
+
+# Rider local files
+.idea
+/ProjectSettings/RiderScriptEditorPersistedState.asset

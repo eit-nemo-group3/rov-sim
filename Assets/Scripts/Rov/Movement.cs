@@ -1,5 +1,4 @@
 using UnityEngine;
-using RovSim.Input;
 
 namespace RovSim.Rov
 {

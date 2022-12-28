@@ -1,5 +1,4 @@
 using UnityEngine;
-using RovSim.Input;
 
 namespace RovSim.Rov
 {
@@ -22,10 +21,10 @@ namespace RovSim.Rov
 		// Update is called once per frame
 		private void Update()
 		{
-			grab();
+			Grab();
 		}
 
-		private void grab()
+		private void Grab()
 		{
 			if (_inputDetector.ClosePressed)
 			{

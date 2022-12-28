@@ -15,7 +15,7 @@ namespace RovSim.Menu
         // Update is called once per frame
         private void Update()
         {
-            if (UnityEngine.Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
                 if (_gameIsPaused)
                 {

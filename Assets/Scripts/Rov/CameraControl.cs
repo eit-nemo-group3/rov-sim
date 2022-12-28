@@ -1,5 +1,4 @@
 using UnityEngine;
-using RovSim.Input;
 
 namespace RovSim.Rov
 {
@@ -29,14 +28,10 @@ namespace RovSim.Rov
 		[SerializeField]
 		private float maxAngle = 45;
 
-		private Camera _camera;
-		//private Rigidbody _body;
 		private InputDetector _inputDetector;
 
 		private void Awake()
 		{
-			_camera = GetComponent<Camera>();
-			//_body = GetComponent<Rigidbody>();
 			_inputDetector = GetComponent<InputDetector>();
 		}
 

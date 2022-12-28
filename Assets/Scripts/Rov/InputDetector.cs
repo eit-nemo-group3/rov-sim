@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace RovSim.Input
+namespace RovSim.Rov
 {
 	public class InputDetector : MonoBehaviour
 	{

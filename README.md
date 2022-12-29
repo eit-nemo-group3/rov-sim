@@ -1,6 +1,6 @@
 # ROV-SIM
 
-Underwater drone simulator, built with the Unity game engine and C#.
+Underwater drone simulator, built with the Unity game engine and C#. Made by a group of students as part of the course _Experts in Teamwork_, spring 2022 at NTNU Trondheim.
 
 **Contents**
 
